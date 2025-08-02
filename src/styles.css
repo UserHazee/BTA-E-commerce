@@ -3,7 +3,8 @@
 @theme{
 
     --breakpoint-tab: 708px;
-    --font-display: "Spartan", sans-serif;
+    --font-spartan: "Spartan", sans-serif;
+    --font-helvetica: "Helvetica", sans-serif;
 }
 /* color theme */
 /* bg-[#222] */
@@ -18,23 +19,14 @@
 
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Thin.ttf');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Light.ttf');
+    src: url('/assets/fonts/Spartan/spartan-light-webfont.woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Regular.ttf');
+    src: url('/assets/fonts/Spartan/spartan-regular-webfont.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -42,49 +34,37 @@
 
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Medium.ttf');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-SemiBold.ttf');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Bold.ttf');
+    src: url('/assets/fonts/Spartan/spartan-bold-webfont.woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-ExtraBold.ttf');
-    font-weight: 800;
+    font-family: 'Helvetica';
+    src: url('/assets/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
-    font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan-Black.ttf');
-    font-weight: 900;
+    font-family: 'Helvetica';
+    src: url('/assets/fonts/Helvetica/HelveticaNowText-Medium.woff2');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/assets/fonts/Helvetica/HelveticaNowText-Bold.woff2');
+    font-weight: 1000;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
 }
 
 
@@ -98,6 +78,7 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     width: 100%;
+    
 }
 
 li a {
