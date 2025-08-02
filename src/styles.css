@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
 
     --breakpoint-tab: 708px;
     --font-spartan: "Spartan", sans-serif;
     --font-helvetica: "Helvetica", sans-serif;
 }
+
 /* color theme */
 /* bg-[#222] */
 /* bg-[#fffff] */
 /* bg-[#ffc107] */
 
 @media(max-width:708px) {
-    ul{
+    ul {
         display: none;
     }
 }
@@ -24,6 +25,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Spartan';
     src: url('/assets/fonts/Spartan/spartan-regular-webfont.woff2');
@@ -47,6 +49,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Helvetica';
     src: url('/assets/fonts/Helvetica/HelveticaNowText-Medium.woff2');
@@ -54,6 +57,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Helvetica';
     src: url('/assets/fonts/Helvetica/HelveticaNowText-Bold.woff2');
@@ -63,7 +67,7 @@
 }
 
 * {
-    
+
     box-sizing: border-box;
 }
 
@@ -76,9 +80,7 @@ body {
 
 header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
     width: 100%;
-    
 }
 
 li a {
@@ -103,4 +105,50 @@ li a:hover::after {
     position: absolute;
     bottom: -4px;
     left: 0px;
+}
+
+.des {
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+}
+
+.des span {
+    color: #606063;
+    font-size: 12px;
+
+}
+
+.des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.des .star i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+.des h4 {
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: 700;
+
+}
+
+.des .cart i {
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    padding-left: 9px;
+
 }
