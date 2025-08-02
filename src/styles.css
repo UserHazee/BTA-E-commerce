@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme{
+
+    --breakpoint-tab: 708px;
+    --font-display: "Spartan", sans-serif;
+}
+/* color theme */
+/* bg-[#222] */
+/* bg-[#fffff] */
+/* bg-[#ffc107] */
+
+@media(max-width:708px) {
+    ul{
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/assets/fonts/Spartan-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+body {
+    width: 100%;
+
+}
+
+header {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    width: 100%;
+}
+
+li a {
+    font-size: 16px;
+    color: white;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+li a:hover,
+li a.active {
+    color: #FFC107;
+
+}
+
+li a.active::after,
+li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #FFC107;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
