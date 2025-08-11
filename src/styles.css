@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-
+    --text-md:16px;
     --breakpoint-tab: 708px;
+    --breakpoint-six: 600px;
     --font-spartan: "Spartan", sans-serif;
     --font-helvetica: "Helvetica", sans-serif;
 }
@@ -147,8 +148,19 @@ li a:hover::after {
     line-height: 40px;
     border-radius: 50px;
     background-color: #e8f6ea;
-    color: #088178;
+    color: #2B2C2D;
     border: 1px solid #cce7d0;
     padding-left: 9px;
 
+}
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));    
+    gap: 30px;
+    place-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 350px;
+    height: auto;
+    margin: auto;
 }
