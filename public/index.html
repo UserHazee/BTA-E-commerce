@@ -1,208 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BTA Ecommerce</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-dM0j3Px7DJ...your_hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-dM0j3Px7DJ...your_hash..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body class=" text-[#222]">
+  <body class="text-[#222]">
     <!-- NAVBAR -->
     <div class="sticky top-0 z-10">
-        <header class="flex py-3 items-between justify-between bg-[#222]  shadow-md absolute ">
-            <div class="ps-10 ">
-                <a href="#">
-                    <img src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png" alt="Logo"
-                        class="h-[60px] w-[60px] object-contain " />
-                </a>
-            </div>
-            <div class="flex flex-row gap-1 justify-center items-center font-helvetica">
-                <nav class="">
-                    <ul class="flex gap-6  list-none items-center justify-center">
-                        <li><a href="#" class="active font-bold ">Home</a></li>
-                        <li><a href="#" class="font-bold">Shop</a></li>
-                        <li><a href="#" class="font-bold">Blog</a></li>
-                        <li><a href="#" class="font-bold">About</a></li>
-                        <li><a href="#" class="font-bold">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="justify-center items-center gap-6 tab:pe-10 pe-0 flex">
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping text-3xl "></i></a></li>
+      <header
+        class="flex py-3 items-between justify-between bg-[#222] shadow-md absolute"
+      >
+        <div class="ps-10">
+          <a href="#">
+            <img
+              src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png"
+              alt="Logo"
+              class="h-[60px] w-[60px] object-contain"
+            />
+          </a>
+        </div>
+        <div
+          class="flex flex-row gap-1 justify-center items-center font-helvetica"
+        >
+          <nav class="">
+            <ul class="flex gap-6 list-none items-center justify-center">
+              <li><a href="#" class="active font-bold">Home</a></li>
+              <li><a href="#" class="font-bold">Shop</a></li>
+              <li><a href="#" class="font-bold">Blog</a></li>
+              <li><a href="#" class="font-bold">About</a></li>
+              <li><a href="#" class="font-bold">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="justify-center items-center gap-6 tab:pe-10 pe-0 flex">
+            <li>
+              <a href="#"><i class="fa-solid fa-cart-shopping text-3xl"></i></a>
+            </li>
 
-                    <li class="tab:hidden pe-10 block"><a href="#"><i class="ic fa-solid fa-bars text-3xl  "></i></a>
-                    </li>
-                </div>
-            </div>
-        </header>
+            <li class="tab:hidden pe-10 block">
+              <a href="#"><i class="ic fa-solid fa-bars text-3xl"></i></a>
+            </li>
+          </div>
+        </div>
+      </header>
     </div>
     <!-- MAIN  -->
     <main>
-        <!-- HERO SECTION -->
-        <section class="flex justify-start items-center ps-10 tab:px-20 h-[100vh] max-w-[100vw] font-spartan" id="hero"
-            style="background-image: url(/assets/img/A4.png); background-repeat: no-repeat; background-size: cover;  background-position: center; ;">
-            <div class="w-7/7 flex flex-col spcae-y-0 lg:space-y-4 pt-36">
-                <h4 class="tab:text-xl text-lg font-semibold text-[#222]">Trade-in-offer</h4>
-                <h2 class="tab:text-5xl text-3xl font-bold  lg:leading-[54px] text-[#222] ">Special value deals</h2>
-                <h1 class="tab:text-5xl text-3xl  font-extrabold text-[#222]">On all Products</h1>
-                <p class="tab:text-sm text-xs text-gray-800 pt-4 tab:pt-2">Save more with coupons & up to 70% off!</p>
-                <button class="mt-4 bg-black text-[#ffc107] max-w-28  py-2 rounded font-helvetica">Shop Now</button>
-            </div>
-        </section>
-        <!-- Feature Section -->
-        <section id="feature" class="">
-            <div class=" py-16 justify-center items-center flex flex-col">
-                <h1 class="text-black font-helvetica font-bold text-7xl tracking-[-6px] italic">BEYOND THE ARC</h1>
-                <p class="font-medium font-helvetica ">Grab your gear and be part of a growing family</p>
-                <button class=" bg-black text-white px-4 py-2 rounded font-helvetica font-medium mt-2">See latest
-                    gear</button>
-            </div>
-        </section>
-        <!-- New Section -->
-        <section id="product" class="text-center">
-            <div class="h-[100vh]">
-                <h1 class="text-6xl font-spartan font-extrabold">Featured Product</h1>
-                <p class="font-medium font-helvetica pb-14">Beyond the arc is looking to go beyond to new modern design for you!</p>
-                <!-- card -->
-                <div class="parent-pro w-[98%]  m-auto ">
-                    <div class="pro-container gap-[35px] flex items-start flex-wrap ">
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200">
-                            <img src="/assets/img/7.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/10.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/11.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/6_e7220691-db26-4db8-a960-6ebaa6599409.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/1_70a83eec-96e5-4b7a-b485-4e7efe2e9186.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/www.thebtastore.com.zip-11.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                            </div>
-                        </div>
-                        <div class="card w-[23%]  px-2 py-3 min-w-[250px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200 ">
-                            <img src="/assets/img/IMG_7203.webp" class="w-[100%] rounded-2xl  " alt="">
-                            <div class="des">
-                                <span>
-                                    Mesh short
-                                </span>
-                                <h5>asdadaasfaf</h5>
-                                <div class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <h4>₱750.00 PHP</h4>
-                               <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                        </div>
-                    </div>
+      <!-- HERO SECTION -->
+      <section
+        class="flex justify-start items-center ps-10 tab:px-20 h-[100vh] max-w-[100vw] font-spartan"
+        id="hero"
+        style="
+          background-image: url(/assets/img/A4.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="w-7/7 flex flex-col spcae-y-0 lg:space-y-4 pt-36">
+          <h4 class="tab:text-2xl text-xl font-semibold text-[#ffc107]">
+            Trade-in-offer
+          </h4>
+          <h2
+            class="tab:text-6xl text-4xl font-bold lg:leading-[54px] text-[#ffc107]"
+          >
+            Special value deals
+          </h2>
+          <h1 class="tab:text-6xl text-4xl font-extrabold text-[#ffc107]">
+            On all Products
+          </h1>
+          <p class="tab:text-sm text-xs text-[white] pt-4 tab:pt-2">
+            Save more with coupons & up to 70% off!
+          </p>
+          <button
+            class="mt-4 bg-black text-[#ffc107] max-w-28 py-2 rounded font-helvetica"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+      <!-- Featured-card Section -->
+      <!-- <section id="featured-card-section">
+            
+        </section> -->
+      <!-- New Section -->
+      <section id="product" class="text-center mt-25">
+        <div class="justify-center items-center flex flex-col">
+          <div class="max-w-[600px] pb-14">
+            <h1 class="six:text-6xl text-4xl font-spartan font-extrabold">
+              Featured Product
+            </h1>
+            <p
+              class="font-medium -tracking-tighter six:tracking-normal six:text-md text-sm font-helvetica"
+            >
+              Beyond the arc is looking to go beyond to new modern design for
+              you!
+            </p>
+            <button
+              class="bg-black text-white px-4 py-2 rounded font-helvetica font-medium mt-2"
+            >
+              See latest gear
+            </button>
+          </div>
+          <!-- card -->
+          <div class="parent-pro w-[100%] m-auto">
+            <div class="pro-container">
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/7.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt</span>
+                  <h5>HAVING POOR DEFENSE IS A CRIME</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱750.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
                 </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/10.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> Jersey </span>
+                  <h5>BTA JERSEY</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱700.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/11.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>GOD ACID</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱900.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/6_e7220691-db26-4db8-a960-6ebaa6599409.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> Mesh short </span>
+                  <h5>BTA MESH</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱800.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/1_70a83eec-96e5-4b7a-b485-4e7efe2e9186.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>GOD'S PLAN</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱850.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/www.thebtastore.com.zip-11.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>GOD DID</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱850.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/IMG_7203.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> Mesh short </span>
+                  <h5>BTA MESH | GREEN</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱800.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- BTA TEXT Section -->
+      <section id="feature" class="mt-25">
+        <div class="py-12 justify-center items-center flex flex-col">
+          <h1
+            class="text-black font-helvetica font-bold text-7xl tracking-[-6px] italic"
+          >
+            BEYOND THE ARC
+          </h1>
+          <p class="font-medium font-helvetica">
+            Grab your gear and be part of a growing family
+          </p>
+        </div>
+      </section>
+      <!-- Latest-product Section -->
+       <section id="latest-product" class=" mt-25">
+        <div class="">
+            <h1 class="text-4xl font-spartan font-bold tracking-widest ps-24 pb-8">Latest</h1>
+          <!-- card -->
+          <div class="parent-pro w-[100%] m-auto">
+            <div class="pro-container">
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/pretty_girls.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>PRETTY GIRLS</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱750.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/Path_to_greatness.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>PATH TO GREATNESS</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱750.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/JOBS_NOT_FINISH.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>JOB'S NOT FINISHED | REGULAR FIT</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱850.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/ZIPMOUTH.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>ZIPMOUTH</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱750.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/MESH_PINK.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> Mesh short </span>
+                  <h5>BTA MESH | PINK</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱800.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/MESH_PURPLE.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> Mesh short </span>
+                  <h5>BTA MESH | PURPLE</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱800.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+              <div
+                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-1 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
+              >
+                <img
+                  src="/assets/img/GD_WHITE.webp"
+                  class="w-[100%] rounded-2xl"
+                  alt=""
+                />
+                <div class="des">
+                  <span> T-Shirt </span>
+                  <h5>GOD DID | WHITE</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₱850.00 PHP</h4>
+                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BANNER SECTION -->
+       <section id="Banner">
+            <div class="banner-container-parent">
+                <article class="pro-container flex six:flex-row flex-col justify-center items-center mx-4 ">
+                    <div class="right-article min-w-[100%] min-h-[400px] " style="background-image: url(/assets/img/Banner1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                        <p>
+                          Day One  
+                        </p>
+                        <h1>How we started it</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, fugit.</p>
+                         <button class="py-2 px-4 border " id="learn-banner-btn">
+                            Learn More
+                         </button>
+                    </div>
+                    <div class="left-article min-w-[100%] min-h-[400px]" style="background-image: url(/assets/img/Banner2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                         <p>
+                          Day One  
+                        </p>
+                        <h1>How we started it</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, fugit.</p>
+                         <button class="py-2 px-4 border " id="learn-banner-btn">
+                            Learn More
+                         </button>
+                    </div>
+                </article>
+                <article class=" mt-7">
+                    <div class="pro-container">
+                        <div class="card w-[100%] h-[300px]" style="background-image: url(/assets/img/Banner3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">s</div>
+                        <div class="card w-[100%] h-[300px]" style="background-image: url(/assets/img/Banner4.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">d</div>
+                        <div class="card w-[100%] h-[300px]" style="background-image: url(/assets/img/Banner5.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">e</div>
+                    </div>
+                </article>
+            </div>
+       </section>
     </main>
     <footer>
-        <!-- Footer content -->
+      <!-- Footer content -->
     </footer>
-
-</body>
-
+  </body>
 </html>
