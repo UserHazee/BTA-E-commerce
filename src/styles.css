@@ -84,6 +84,7 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     width: 100%;
 }
+/* Landing Page */
 @media(max-width:708px){
     #nav{
         z-index: 8;
@@ -207,4 +208,9 @@ li a:hover::after {
     min-height: 350px;
     height: auto;
     margin: auto;
+}
+/* Shop Page */
+
+@media(max-width:708px){
+
 }
