@@ -2,6 +2,7 @@
 
 @theme {
     --text-md:16px;
+    --breakpoint-blog: 768px;
     --breakpoint-featured-text: 517px;
     --breakpoint-tab: 708px;
     --breakpoint-six: 600px;
@@ -15,14 +16,15 @@
 /* bg-[#ffc107] */
 
 @media(max-width:708px) {
-    ul {
+    ul  {
         display: none;
     }
 }
 
+
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan/spartan-light-webfont.woff2');
+    src: url('/public/fonts//Spartan/spartan-light-webfont.woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -30,7 +32,7 @@
 
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan/spartan-regular-webfont.woff2');
+    src: url('/public/fonts/Spartan/spartan-regular-webfont.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -38,7 +40,7 @@
 
 @font-face {
     font-family: 'Spartan';
-    src: url('/assets/fonts/Spartan/spartan-bold-webfont.woff2');
+    src: url('/public/fonts/Spartan/spartan-bold-webfont.woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -46,7 +48,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('/assets/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
+    src: url('/public/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -54,7 +56,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('/assets/fonts/Helvetica/HelveticaNowText-Medium.woff2');
+    src: url('/public/fonts/Helvetica/HelveticaNowText-Medium.woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -62,7 +64,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('/assets/fonts/Helvetica/HelveticaNowText-Bold.woff2');
+    src: url('/public/fonts/Helvetica/HelveticaNowText-Bold.woff2');
     font-weight: 1000;
     font-style: normal;
     font-display: swap;
@@ -84,8 +86,19 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     width: 100%;
 }
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 /* Landing Page */
 @media(max-width:708px){
+        body {
+        overflow-x: hidden;
+    }
+     header {
+        max-width: 100vw;
+        overflow: hidden;
+    }
     #nav{
         z-index: 8;
         display: flex;
@@ -256,3 +269,142 @@ li a:hover::after {
 }#inputopt:focus{
     outline: none;
 }
+
+/* INDEX HTML */
+html{
+        scroll-behavior: smooth;
+      }
+      
+      /* Animation Classes */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .slide-in-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      .slide-in-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .slide-in-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      .slide-in-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .scale-in {
+        opacity: 0;
+        transform: scale(0.8);
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      .scale-in.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      /* Enhanced hover effects */
+      .home-card {
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      .home-card:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+      }
+      
+      .home-card .cart {
+        transition: all 0.3s ease;
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      
+      .home-card:hover .cart {
+        transform: translateX(1px);
+        opacity: 1;
+      }
+      
+      /* Navbar scroll effect */
+      .navbar-scrolled {
+        background: rgba(34, 34, 34, 0.95);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+      
+      /* Button hover animations */
+      .btn-animate {
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .btn-animate:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+      }
+      
+      .btn-animate:hover:before {
+        left: 100%;
+      }
+      
+      .btn-animate:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+      
+      /* Parallax effect for hero */
+      .parallax-bg {
+        transition: transform 0.1s ease-out;
+      }
+      
+      /* Stagger animation delay */
+      .animate-stagger:nth-child(1) { animation-delay: 0.1s; }
+      .animate-stagger:nth-child(2) { animation-delay: 0.2s; }
+      .animate-stagger:nth-child(3) { animation-delay: 0.3s; }
+      .animate-stagger:nth-child(4) { animation-delay: 0.4s; }
+      .animate-stagger:nth-child(5) { animation-delay: 0.5s; }
+      .animate-stagger:nth-child(6) { animation-delay: 0.6s; }
+      .animate-stagger:nth-child(7) { animation-delay: 0.7s; }
+      
+      /* Floating animation for cart icons */
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      
+      @keyframes floating {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      /* Text shadow for better readability */
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      
+      /* Smooth transitions for all interactive elements */
+      * {
+        transition: all 0.3s ease;
+      }

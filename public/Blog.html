@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Tech Insights</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .hero-gradient {
+        background-image: url(/assets/img/bta-hero-blog.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
+
+      .content-section:nth-child(even) .content-wrapper {
+        flex-direction: row-reverse;
+      }
+
+      @media (max-width: 768px) {
+        .content-section .content-wrapper,
+        .content-section:nth-child(even) .content-wrapper {
+          flex-direction: column !important;
+        }
+        .txt-hero {
+          margin-top: 12rem;
+        }
+        .hero-gradient {
+          height: 50vh;
+        }
+        .bg-article {
+          width: 90%;
+        }
+        .bg-gradient-to-br {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <div class="sticky top-0 z-30">
+      <header
+        id="navbar"
+        class="flex py-3 items-between justify-between bg-[#222] shadow-md absolute w-full transition-all duration-300"
+      >
+        <div class="ps-10">
+          <a href="#" class="transform transition-transform hover:scale-110">
+            <img
+              src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png"
+              alt="Logo"
+              class="h-[60px] w-[60px] object-contain"
+            />
+          </a>
+        </div>
+        <div
+          class="flex flex-row gap-1 justify-center items-center font-helvetica"
+        >
+          <nav class="">
+            <ul
+              id="nav"
+              class="flex gap-6 list-none items-center justify-center"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="font-bold text-white hover:text-[#ffc107] transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shop.html"
+                  class="font-bold text-white hover:text-[#ffc107] transition-colors"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="active font-bold text-white hover:text-[#ffc107] transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-bold text-white hover:text-[#ffc107] transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-bold text-white hover:text-[#ffc107] transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li class="closing-icon block tab:hidden">
+                <a href="#" id="close"><i class="fas fa-window-close"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="mobile justify-center items-center gap-6 tab:pe-10 pe-0 flex"
+          >
+            <li>
+              <a href="cart.html" class="floating"
+                ><i
+                  class="fa-solid fa-cart-shopping text-3xl text-white hover:text-[#ffc107] transition-colors"
+                ></i
+              ></a>
+            </li>
+
+            <li class="tab:hidden pe-10 block">
+              <div id="bar" class="bar">
+                <i
+                  id="bar"
+                  class="ic fa-solid fa-bars text-3xl text-white hover:text-[#ffc107] transition-colors"
+                ></i>
+              </div>
+            </li>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Hero Section -->
+    <section
+      class="hero-gradient h-screen flex items-center justify-center text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black opacity-10"></div>
+      <div class="txt-hero text-center z-10 px-4 mt-96">
+        <p class="text-xl md:text-2xl font-light opacity-90">
+          Exploring Digital Innovation
+        </p>
+        <button
+          onclick="scrollToContent()"
+          class="blog:mt-8 mt-2 blog:px-8 px-4 blog:py-3 py-1.5 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors duration-300"
+        >
+          Read Blogs
+        </button>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-16" id="content">
+      <!-- Article 1 -->
+      <section class="content-section mb-20 fade-in">
+        <div
+          class="content-wrapper flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              GRABE TALAGA ANG BASKETBALL SA APALIT I LOVE IT
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Artificial intelligence is reshaping industries at an
+              unprecedented pace. From healthcare diagnostics to autonomous
+              vehicles, AI technologies are becoming integral to our daily
+              lives. Machine learning algorithms now power everything from
+              recommendation systems to fraud detection, creating more efficient
+              and personalized experiences. As we stand on the brink of AGI
+              development, understanding these transformative technologies
+              becomes crucial for businesses and individuals alike.
+            </p>
+          </div>
+          <div class="flex-1 bg-article">
+            <div
+              class="bg-gradient-to-br rounded-2xl h-80 flex items-center justify-center shadow-2xl"
+            >
+              <img
+                src="/assets/img/ARTICLE-1-BLOG.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article 2 -->
+      <section class="content-section mb-20 fade-in">
+        <div
+          class="content-wrapper flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              CEBU CITY PALARONG PAMBANSA 2024
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Green coding isn't just a trend—it's a necessity for our digital
+              future. Optimizing websites for energy efficiency reduces carbon
+              footprints while improving user experience through faster load
+              times and better performance. By implementing efficient
+              algorithms, minimizing resource usage, and choosing sustainable
+              hosting solutions, developers can create environmentally
+              responsible applications that scale effectively across different
+              devices and network conditions.
+            </p>
+          </div>
+          <div class="flex-1 bg-article">
+            <div
+              class="bg-gradient-to-br rounded-2xl h-80 flex items-center justify-center shadow-2xl"
+            >
+              <img
+                src="/assets/img/ARTICLE-2-BLOG.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article 3 -->
+      <section class="content-section mb-20 fade-in">
+        <div
+          class="content-wrapper flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              MPBL’S MOST ANTICIPATED MATCH UP 🔥 NUEVA ECIJA VS PAMPANGA
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              As digital transformation accelerates, cybersecurity threats
+              evolve in complexity and frequency. Organizations must adopt
+              zero-trust architectures, implement multi-factor authentication,
+              and maintain robust incident response protocols. The rise of
+              remote work has expanded attack surfaces, making endpoint security
+              and secure communication channels more critical than ever.
+              Understanding these evolving threat landscapes helps build
+              resilient systems that protect sensitive data and maintain
+              business continuity.
+            </p>
+          </div>
+          <div class="flex-1 bg-article">
+            <div
+              class="bg-gradient-to-br rounded-2xl h-80 flex items-center justify-center shadow-2xl"
+            >
+              <img
+                src="/assets/img/ARTICLE-3-BLOG.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article 4 -->
+      <section class="content-section mb-20 fade-in">
+        <div
+          class="content-wrapper flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              ONE DAY IN PALARONG PAMBANSA ✊
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              The shift to cloud-first architectures has fundamentally changed
+              how we build and deploy applications. Serverless computing,
+              containerization, and microservices enable unprecedented
+              scalability and cost efficiency. Modern cloud platforms offer
+              comprehensive services from AI/ML tools to edge computing
+              capabilities, allowing developers to focus on innovation rather
+              than infrastructure management. This paradigm shift continues to
+              democratize access to enterprise-grade computing resources
+              worldwide.
+            </p>
+          </div>
+          <div class="flex-1 bg-article">
+            <div
+              class="bg-gradient-to-br rounded-2xl h-80 flex items-center justify-center shadow-2xl"
+            >
+              <img
+                src="/assets/img/ARTICLE-4-BLOG.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article 5 -->
+      <section class="content-section mb-20 fade-in">
+        <div
+          class="content-wrapper flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              GRATEFUL FOR MY MENTOR RAYMOND GARCIA DIZON
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              With mobile devices accounting for over half of global web
+              traffic, designing for mobile-first isn't optional—it's essential.
+              Progressive web applications blur the lines between native apps
+              and websites, offering app-like experiences through browsers.
+              Touch-optimized interfaces, gesture navigation, and responsive
+              layouts ensure seamless experiences across all device sizes. This
+              approach prioritizes performance and accessibility, creating
+              inclusive digital products that serve diverse user needs
+              effectively.
+            </p>
+          </div>
+          <div class="flex-1 bg-article">
+            <div
+              class="bg-gradient-to-br rounded-2xl h-80 flex items-center justify-center shadow-2xl"
+            >
+              <img
+                src="/assets/img/ARTICLE-5-BLOG.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- before Footer Section -->
+    <section id="sign-up-banner">
+      <div class="bg-[#2222] h-[200px] place-content-center items-center flex">
+        <img
+          src="/assets/img/BTA_black.png"
+          alt=""
+          class="h-[100px] w-[100px] object-contain"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="pb-18 pt-6 w-[90%] m-auto">
+      <!-- Footer content -->
+      <div class="roll-tide flex flex-col tab:flex-row">
+        <div class="col basis-[40%] slide-in-left">
+          <h4 class="font-bold pb-4 tab:pt-0 pt-4">Contact</h4>
+          <p class="overflow-hidden">
+            <strong>Address: </strong>524 San Jose Del Monte, Bulacan
+          </p>
+          <p class="overflow-hidden">
+            <strong>Phone: </strong>+63 998 1251 748 / +63 970 7579 959
+          </p>
+          <p class="overflow-hidden">
+            <strong>OpenHours: </strong>8:00 AM - 18:00, Mon - Sat
+          </p>
+
+          <div class="socials">
+            <h3 class="font-bold py-4">Follow Us</h3>
+            <div class="icon flex gap-2 my-5">
+              <i
+                class="fab fa-facebook-f fa-xl hover:text-blue-600 hover:scale-125 transition-all cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-instagram fa-xl hover:text-pink-600 hover:scale-125 transition-all cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-youtube fa-xl hover:text-red-600 hover:scale-125 transition-all cursor-pointer"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2block flex basis-[40%] slide-in-right">
+          <div class="col basis-[50%] tab:basis-[50%]">
+            <h1 class="pb-4 mt-4"><strong>About</strong></h1>
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >About Us</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Delivery information</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Privacy Policy</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Terms & Condititions</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Contact Us</a
+            >
+          </div>
+          <div class="col basis-[50%]">
+            <h1 class="pb-4 mt-4"><strong>My Account</strong></h1>
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Sign In</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >View Cart</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >My Wishlist</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Track My Order</a
+            ><br />
+            <a href="#about" class="hover:text-[#ffc107] transition-colors"
+              >Help</a
+            ><br />
+          </div>
+        </div>
+
+        <div class="col install basis-[20%] scale-in">
+          <h4 class="pb-4 mt-4"><strong>Payment Method</strong></h4>
+          <p>Secured Payment Gateways</p>
+          <div class="row py-4">
+            <img
+              src="/assets/img/Group 50.png"
+              alt=""
+              class="w-full h-full object-fit transform transition-transform"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scroll to content
+      function scrollToContent() {
+        document.getElementById("content").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      // Fade in animation on scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll(".fade-in");
+
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // Initialize animations
+      window.addEventListener("scroll", animateOnScroll);
+      window.addEventListener("load", animateOnScroll);
+
+      // Add some interactive hover effects
+      document.addEventListener("DOMContentLoaded", function () {
+        const gradientBoxes = document.querySelectorAll(".bg-gradient-to-br");
+
+        gradientBoxes.forEach((box) => {
+          box.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.05) rotate(2deg)";
+            this.style.transition = "transform 0.3s ease";
+          });
+
+          box.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1) rotate(0deg)";
+          });
+        });
+      });
+      // Scroll animations
+      function animateOnScroll() {
+        const elements = document.querySelectorAll(
+          ".fade-in, .slide-in-left, .slide-in-right, .scale-in"
+        );
+
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add("visible");
+          }
+        });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
