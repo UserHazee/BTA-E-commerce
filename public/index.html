@@ -772,7 +772,6 @@
       window.addEventListener("scroll", () => {
         animateOnScroll();
         updateNavbar();
-        parallaxEffect();
       });
 
       window.addEventListener("load", () => {
@@ -815,19 +814,7 @@
         });
       });
 
-      // LocalStorage functionality
-      const product = JSON.parse(localStorage.getItem("product"));
-      if (product) {
-        const mainImg = document.getElementById("mainImg");
-        const titleProduct = document.getElementById("title-product");
-        const priceProduct = document.getElementById("price-product");
-        const descProduct = document.getElementById("desc-product");
-
-        if (mainImg) mainImg.src = product.src;
-        if (titleProduct) titleProduct.textContent = product.title;
-        if (priceProduct) priceProduct.textContent = product.price;
-        if (descProduct) descProduct.textContent = product.desc;
-      }
+      
     </script>
 
     <script src="script.js"></script>
