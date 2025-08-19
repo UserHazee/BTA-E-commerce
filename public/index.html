@@ -12,7 +12,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style></style>
+    <style>@font-face {
+  font-family: 'Spartan';
+  src: url('/public/fonts//Spartan/spartan-light-webfont.woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url('/public/fonts/Spartan/spartan-regular-webfont.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url('/public/fonts/Spartan/spartan-bold-webfont.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/fonts/Helvetica/HelveticaNowText-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/fonts/Helvetica/HelveticaNowText-Bold.woff2');
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+}</style>
   </head>
 
   <body class="text-[#222]">
@@ -756,17 +797,6 @@
           navbar.classList.remove("navbar-scrolled");
         }
       }
-
-      // Parallax effect for hero section
-      // function parallaxEffect() {
-      //   const hero = document.getElementById('hero');
-      //   const scrolled = window.pageYOffset;
-      //   const rate = scrolled * -0.5;
-
-      //   if (hero) {
-      //     hero.style.transform = `translateY(${rate}px)`;
-      //   }
-      // }
 
       // Initialize all animations and effects
       window.addEventListener("scroll", () => {
