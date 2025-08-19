@@ -1064,42 +1064,42 @@
 }
 @font-face {
   font-family: 'Spartan';
-  src: url('fonts/Spartan/spartan-light-webfont.woff2');
+  src: url('/fonts/Spartan/spartan-light-webfont.woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spartan';
-  src: url('fonts/Spartan/spartan-regular-webfont.woff2');
+  src: url('/fonts/Spartan/spartan-regular-webfont.woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Spartan';
-  src: url('fonts/Spartan/spartan-bold-webfont.woff2');
+  src: url('/fonts/Spartan/spartan-bold-webfont.woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helvetica';
-  src: url('fonts/Helvetica/HelveticaNowText-RegIta.woff2');
+  src: url('/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helvetica';
-  src: url('fonts/Helvetica/HelveticaNowText-Medium.woff2');
+  src: url('/fonts/Helvetica/HelveticaNowText-Medium.woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helvetica';
-  src: url('fonts/Helvetica/HelveticaNowText-Bold.woff2');
+  src: url('/fonts/Helvetica/HelveticaNowText-Bold.woff2');
   font-weight: 1000;
   font-style: normal;
   font-display: swap;
