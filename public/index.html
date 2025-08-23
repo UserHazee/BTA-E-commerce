@@ -751,24 +751,24 @@
       }
 
       // Navbar scroll effect
-      function updateNavbar() {
-        const navbar = document.getElementById("navbar");
-        if (window.scrollY > 100) {
-          navbar.classList.add("navbar-scrolled");
-        } else {
-          navbar.classList.remove("navbar-scrolled");
-        }
-      }
+      // function updateNavbar() {
+      //   const navbar = document.getElementById("navbar");
+      //   if (window.scrollY > 100) {
+      //     navbar.classList.add("navbar-scrolled");
+      //   } else {
+      //     navbar.classList.remove("navbar-scrolled");
+      //   }
+      // }
 
       // Initialize all animations and effects
       window.addEventListener("scroll", () => {
         animateOnScroll();
-        updateNavbar();
+        // updateNavbar();
       });
 
       window.addEventListener("load", () => {
         animateOnScroll();
-        updateNavbar();
+        // updateNavbar();
       });
 
       // Product interactions
@@ -812,6 +812,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 
