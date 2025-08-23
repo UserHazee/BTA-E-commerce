@@ -9,7 +9,55 @@
     --font-spartan: "Spartan", sans-serif;
     --font-helvetica: "Helvetica", sans-serif;
 }
+   @layer base {
+     @font-face {
+    font-family: 'Spartan';
+    src: url('/public/fonts//Spartan/spartan-light-webfont.woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Spartan';
+    src: url('/public/fonts/Spartan/spartan-regular-webfont.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/public/fonts/Spartan/spartan-bold-webfont.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/public/fonts/Helvetica/HelveticaNowText-RegIta.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/public/fonts/Helvetica/HelveticaNowText-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/public/fonts/Helvetica/HelveticaNowText-Bold.woff2');
+    font-weight: 1000;
+    font-style: normal;
+    font-display: swap;
+}
+    }
 /* color theme */
 /* bg-[#222] */
 /* bg-[#fffff] */
@@ -407,4 +455,5 @@ html{
       /* Smooth transitions for all interactive elements */
       * {
         transition: all 0.3s ease;
+
       }
