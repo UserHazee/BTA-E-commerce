@@ -1,16 +1,4 @@
-@import "tailwindcss";
-
-@theme {
-    --text-md:16px;
-    --breakpoint-blog: 768px;
-    --breakpoint-featured-text: 517px;
-    --breakpoint-tab: 708px;
-    --breakpoint-six: 600px;
-    --font-spartan: "Spartan", sans-serif;
-    --font-helvetica: "Helvetica", sans-serif;
-}
-   @layer base {
-     @font-face {
+@font-face {
     font-family: 'Spartan';
     src: url('/public/fonts//Spartan/spartan-light-webfont.woff2');
     font-weight: 300;
@@ -57,7 +45,20 @@
     font-style: normal;
     font-display: swap;
 }
-    }
+
+@import "tailwindcss";
+
+@theme {
+    --text-md:16px;
+    --breakpoint-blog: 768px;
+    --breakpoint-featured-text: 517px;
+    --breakpoint-tab: 708px;
+    --breakpoint-six: 600px;
+    --font-spartan: "Spartan", sans-serif;
+    --font-helvetica: "Helvetica", sans-serif;
+}
+   
+    
 /* color theme */
 /* bg-[#222] */
 /* bg-[#fffff] */
@@ -457,3 +458,4 @@ html{
         transition: all 0.3s ease;
 
       }
+
