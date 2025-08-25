@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gartner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gartner-blue': '#1a3b5c',
+                        'gartner-blue-light': '#2d5a87',
+                        'gartner-green': '#00d4aa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-gartner-gradient {
+            background: linear-gradient(135deg, #1a3b5c 0%, #2d5a87 100%);
+        }
+        
+        .link-arrow::after {
+            content: '↗';
+            margin-left: 8px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gartner-gradient text-white px-5 py-15 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-20 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        We deliver<br>
+                        <span class="text-gartner-green">actionable,<br>
+                        objective insight</span><br>
+                        to executives and<br>
+                        their teams.
+                    </h1>
+                    
+                    <p class="text-lg leading-relaxed opacity-90">
+                        Our expert guidance and tools enable faster, smarter decisions and stronger performance on an organization's mission-critical priorities.
+                    </p>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:pl-10">
+                    <h2 class="text-2xl lg:text-2xl font-bold mb-8 lg:mb-10 text-white">
+                        About Gartner
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
+                        <div class="text-left">
+                            <span class="block text-4xl lg:text-5xl font-bold text-gartner-green leading-none mb-3">
+                                $5B+
+                            </span>
+                            <div class="text-sm lg:text-base leading-relaxed opacity-90">
+                                We are a $5.5 billion company and a member of the S&P 500.
+                            </div>
+                        </div>
+                        
+                        <div class="text-left">
+                            <span class="block text-4xl lg:text-5xl font-bold text-gartner-green leading-none mb-3">
+                                90
+                            </span>
+                            <div class="text-sm lg:text-base leading-relaxed opacity-90">
+                                We work with businesses in nearly 90 countries.
+                            </div>
+                        </div>
+                        
+                        <div class="text-left">
+                            <span class="block text-4xl lg:text-5xl font-bold text-gartner-green leading-none mb-3">
+                                19,500
+                            </span>
+                            <div class="text-sm lg:text-base leading-relaxed opacity-90">
+                                We have over 19,500 associates in 95+ offices globally.
+                            </div>
+                        </div>
+                        
+                        <div class="text-left">
+                            <span class="block text-4xl lg:text-5xl font-bold text-gartner-green leading-none mb-3">
+                                40+
+                            </span>
+                            <div class="text-sm lg:text-base leading-relaxed opacity-90">
+                                Over 40 years providing insights and expert guidance to clients' enterprises worldwide.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

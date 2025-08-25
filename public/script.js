@@ -85,3 +85,10 @@ for (let i = 0; i < homeImg.length; i++) {
 
     };
 
+
+const removeCart = document.getElementById("removeCart");
+const removeElement = document.getElementById("cart");
+removeCart.addEventListener('click', () => {
+    // Remove the element when the button is clicked
+    removeElement.remove();
+});

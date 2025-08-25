@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" id="index">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BTA Ecommerce</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-dM0j3Px7DJ...your_hash..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style></style>
-  </head>
 
-  <body class="text-[#222]">
-    <!-- NAVBAR -->
-    <div class="sticky top-0 z-10">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTA Ecommerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-dM0j3Px7DJ...your_hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style></style>
+</head>
+
+<body class="text-[#222]">
+<div class="sticky top-0 z-30 mb-25">
       <header
         id="navbar"
         class="flex py-3 items-between justify-between bg-[#222] shadow-md absolute w-full transition-all duration-300"
@@ -25,7 +20,7 @@
         <div class="ps-10">
           <a href="#" class="transform transition-transform hover:scale-110">
             <img
-              src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png"
+              src="assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png"
               alt="Logo"
               class="h-[60px] w-[60px] object-contain"
             />
@@ -41,7 +36,7 @@
             >
               <li>
                 <a
-                  href="index.html"
+                  href="#"
                   class=" font-bold text-white hover:text-[#ffc107] transition-colors"
                   >Home</a
                 >
@@ -81,9 +76,9 @@
             class="mobile justify-center items-center gap-6 tab:pe-10 pe-0 flex"
           >
             <li class="">
-              <a href="#" class="active text-[#ffc107] floating"
+              <a href="cart.html" class="active floating"
                 ><i
-                  class="fa-solid fa-cart-shopping text-3xl hover:text-[#ffc107] transition-colors"
+                  class="fa-solid fa-cart-shopping text-3xl text-[#ffc107] transition-colors"
                 ></i
               ></a>
             </li>
@@ -100,243 +95,289 @@
         </div>
       </header>
     </div>
-    <!-- MAIN  -->
-    <main class="">
-      <!-- HERO SECTION -->
-      <section
-        class="flex justify-start items-center ps-10 tab:px-20 h-[100vh] max-w-[100vw] font-spartan"
-        id="hero"
-        style="
-          background-image: url(/assets/img/A4.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div class="w-7/7 flex flex-col spcae-y-0 lg:space-y-4 pt-36 fade-in">
-          <h4
-            class="tab:text-2xl text-xl font-semibold text-[#ffc107] text-shadow"
-          >
-            Trade-in-offer
-          </h4>
-          <h2
-            class="tab:text-6xl text-4xl font-bold lg:leading-[54px] text-[#ffc107] text-shadow"
-          >
-            Special value deals
-          </h2>
-          <h1
-            class="tab:text-6xl text-4xl font-extrabold text-[#ffc107] text-shadow"
-          >
-            On all Products
-          </h1>
-          <p class="tab:text-sm text-xs text-[white] pt-4 tab:pt-2 text-shadow">
-            Save more with coupons & up to 70% off!
-          </p>
-          <a href="shop.html" class="w-[7rem] mt-4 rounded"
-            ><div
-              class=" text-center bg-black text-white max-w-28 py-2 rounded font-helvetica btn-animate hover:bg-[#ffc107] hover:text-black cursor-pointer"
-            >
-              Shop Now
-            </div></a
-          >
-        </div>
-      </section>
-      <!-- before Footer Section -->
-      <section id="sign-up-banner">
-        <div
-          class="bg-[#2222] h-[200px] place-content-center items-center flex"
-        >
-          <img
-            src="/assets/img/BTA_black.png"
-            alt=""
-            class="h-[100px] w-[100px] object-contain"
-          />
-        </div>
-      </section>
-    </main>
-    <footer class="pb-18 pt-6 w-[90%] m-auto">
-      <!-- Footer content -->
-      <div class="roll-tide flex flex-col tab:flex-row">
-        <div class="col basis-[40%] slide-in-left">
-          <h4 class="font-bold pb-4 tab:pt-0 pt-4">Contact</h4>
-          <p class="overflow-hidden">
-            <strong>Address: </strong>524 San Jose Del Monte, Bulacan
-          </p>
-          <p class="overflow-hidden">
-            <strong>Phone: </strong>+63 998 1251 748 / +63 970 7579 959
-          </p>
-          <p class="overflow-hidden">
-            <strong>OpenHours: </strong>8:00 AM - 18:00, Mon - Sat
-          </p>
-
-          <div class="socials">
-            <h3 class="font-bold py-4">Follow Us</h3>
-            <div class="icon flex gap-2 my-5">
-              <i
-                class="fab fa-facebook-f fa-xl hover:text-blue-600 hover:scale-125 transition-all cursor-pointer"
-              ></i>
-              <i
-                class="fab fa-instagram fa-xl hover:text-pink-600 hover:scale-125 transition-all cursor-pointer"
-              ></i>
-              <i
-                class="fab fa-youtube fa-xl hover:text-red-600 hover:scale-125 transition-all cursor-pointer"
-              ></i>
+  <main class="sm:mx-20 mx-4">
+    <section id="cartSystem" class="">
+      <!-- top text part -->
+      <div class="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20 pb-2 m-auto">
+        <h2 class="font-semibold mb-2 sm:mb-0">SHOPPING BAG (3)</h2>
+        <p class="font-semibold">Need help? 0970-7579-959</p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20 pb-8 m-auto">
+        <p class="font-semibold mb-2 sm:mb-0">Sign in to sync your cart across your devices</p>
+        <p class="font-semibold ">Lets Chat &thinsp;<i class="fa-solid fa-comment-dots"></i></p>
+      </div>
+      <!-- CArt Products and Payment -->
+      <article class="grid grid-cols-1 lg:grid-cols-6 gap-4 w-full m-auto px-4 sm:px-0 mb-15">
+        <main class="lg:col-span-4">
+            <div class="flex justify-between font-bold mb-4">
+              <p>ITEM</p>
+              <p>PRICE</p>
             </div>
+              <div class="border-t border-gray-300 my-2"></div>
+            <div id="cart1" class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
+                <div class="images md:col-span-1 justify-center items-center flex">
+                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
+                </div>
+                <div class="product-des md:col-span-3 ps-6 pt-6">
+                  <h1 class="font-bold">BTA JERSEY</h1>
+                  <p class="text-sm font-semibold">T-SHORT</p>
+                  <p class="inline-block">Size: XS,</p>
+                  <p class="inline-block">Color: Black,</p>
+                  <p class="inline-block">Qty: 1</p>
+                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
+                  <div class="flex flex-wrap gap-2">
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
+                    <button id="removeCart" class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
+                  </div>
+                </div>
+                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
+                  $100.23
+                </div>
+            </div>
+              <div class="border-t border-gray-300 my-2"></div>
+            <!-- second cart  -->
+             <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
+                <div class="images md:col-span-1 justify-center items-center flex">
+                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
+                </div>
+                <div class="product-des md:col-span-3 ps-6 pt-6">
+                  <h1 class="font-bold">BTA JERSEY</h1>
+                  <p class="text-sm font-semibold">T-SHORT</p>
+                  <p class="inline-block">Size: XS,</p>
+                  <p class="inline-block">Color: Black,</p>
+                  <p class="inline-block">Qty: 1</p>
+                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
+                  <div class="flex flex-wrap gap-2">
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
+                  </div>
+                </div>
+                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
+                  $100.23
+                </div>
+            </div>
+            <!-- third cart -->
+               <div class="border-t border-gray-300 my-2"></div>
+             <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
+                <div class="images md:col-span-1 justify-center items-center flex">
+                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
+                </div>
+                <div class="product-des md:col-span-3 ps-6 pt-6">
+                  <h1 class="font-bold">BTA JERSEY</h1>
+                  <p class="text-sm font-semibold">T-SHORT</p>
+                  <p class="inline-block">Size: XS,</p>
+                  <p class="inline-block">Color: Black,</p>
+                  <p class="inline-block">Qty: 1</p>
+                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
+                  <div class="flex flex-wrap gap-2">
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
+                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
+                  </div>
+                </div>
+                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
+                  $100.23
+                </div>
+            </div>
+        </main>
+        <aside class="lg:col-span-2  order-first lg:order-last">
+          <div class="text-center font-bold">
+            <p>ORDER SUMMARY</p>
           </div>
-        </div>
-        <div class="footer-2block flex basis-[40%] slide-in-right">
-          <div class="col basis-[50%] tab:basis-[50%]">
-            <h1 class="pb-4 mt-4"><strong>About</strong></h1>
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >About Us</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Delivery information</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Privacy Policy</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Terms & Condititions</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Contact Us</a
-            >
+          <div class="summaryPurchase border-2 border-gray-500 rounded-xs py-6 px-6">
+            <div class="flex justify-between">
+              <p>subtotal (3)</p>
+              <p>P 1223.04</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Free shipping</p>
+              <p>P 00.00</p>
+            </div>
+            <button class="pb-2"><span class="text-sm text-gray-500 underline font-serif">details</span></button>
+            <p class="pb-2"><span class="text-sm text-gray-500 underline font-serif">Sales Tax calculated after shipping</span></p>
+            <div class="border-t border-gray-300 my-2"></div>
+            <div class=" flex justify-between">
+              <p>estimated total</p>
+              <p>P 1223.04</p>
+            </div>
+          
           </div>
-          <div class="col basis-[50%]">
-            <h1 class="pb-4 mt-4"><strong>My Account</strong></h1>
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Sign In</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >View Cart</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >My Wishlist</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Track My Order</a
-            ><br />
-            <a href="#about" class="hover:text-[#ffc107] transition-colors"
-              >Help</a
-            ><br />
+          <div class="bg-[#222] py-5 justify-center items-center text-white font-bold flex rounded-lg mt-2">
+            <button>CHECKOUT YOUR CART</button>
           </div>
-        </div>
+           <div class="border py-2 justify-center items-center flex rounded-lg mt-2">
+            <button class="flex justify-center items-center gap-2 "><img src="assets/img/gcash-seeklogo.png" class="h-12" alt=""><p class="text-lg font-semibold">Gcash Checkout</p></button>
+          </div>
+        </aside>
+      </article>
+    </section>
 
-        <div class="col install basis-[20%] scale-in">
-          <h4 class="pb-4 mt-4"><strong>Payment Method</strong></h4>
-          <p>Secured Payment Gateways</p>
-          <div class="row py-4">
-            <img
-              src="/assets/img/Group 50.png"
-              alt=""
-              class="w-full h-full object-fit transform transition-transform"
-            />
+    <!-- before Footer Section -->
+    <section id="sign-up-banner">
+      <div class="bg-[#2222] h-[200px] place-content-center items-center flex">
+        <img src="assets/img/BTA_black.png" alt="" class="h-[100px] w-[100px] object-contain" />
+      </div>
+    </section>
+</main>
+  <footer class="pb-18 pt-6 w-[90%] m-auto">
+    <!-- Footer content -->
+    <div class="roll-tide flex flex-col tab:flex-row">
+      <div class="col basis-[40%] slide-in-left">
+        <h4 class="font-bold pb-4 tab:pt-0 pt-4">Contact</h4>
+        <p class="overflow-hidden">
+          <strong>Address: </strong>524 San Jose Del Monte, Bulacan
+        </p>
+        <p class="overflow-hidden">
+          <strong>Phone: </strong>+63 998 1251 748 / +63 970 7579 959
+        </p>
+        <p class="overflow-hidden">
+          <strong>OpenHours: </strong>8:00 AM - 18:00, Mon - Sat
+        </p>
+
+        <div class="socials">
+          <h3 class="font-bold py-4">Follow Us</h3>
+          <div class="icon flex gap-2 my-5">
+            <i class="fab fa-facebook-f fa-xl hover:text-blue-600 hover:scale-125 transition-all cursor-pointer"></i>
+            <i class="fab fa-instagram fa-xl hover:text-pink-600 hover:scale-125 transition-all cursor-pointer"></i>
+            <i class="fab fa-youtube fa-xl hover:text-red-600 hover:scale-125 transition-all cursor-pointer"></i>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="footer-2block flex basis-[40%] slide-in-right">
+        <div class="col basis-[50%] tab:basis-[50%]">
+          <h1 class="pb-4 mt-4"><strong>About</strong></h1>
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">About Us</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Delivery information</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Privacy Policy</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Terms & Condititions</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Contact Us</a>
+        </div>
+        <div class="col basis-[50%]">
+          <h1 class="pb-4 mt-4"><strong>My Account</strong></h1>
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Sign In</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">View Cart</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">My Wishlist</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Track My Order</a><br />
+          <a href="#about" class="hover:text-[#ffc107] transition-colors">Help</a><br />
+        </div>
+      </div>
 
-    <script>
-      // Scroll animations
-      function animateOnScroll() {
-        const elements = document.querySelectorAll(
-          ".fade-in, .slide-in-left, .slide-in-right, .scale-in"
-        );
+      <div class="col install basis-[20%] scale-in">
+        <h4 class="pb-4 mt-4"><strong>Payment Method</strong></h4>
+        <p>Secured Payment Gateways</p>
+        <div class="row py-4">
+          <img src="assets/img/Group 50.png" alt="" class="w-full h-full object-fit transform transition-transform" />
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        elements.forEach((element) => {
-          const elementTop = element.getBoundingClientRect().top;
-          const elementVisible = 150;
+  <script>
+    // Scroll animations
+    function animateOnScroll() {
+      const elements = document.querySelectorAll(
+        ".fade-in, .slide-in-left, .slide-in-right, .scale-in"
+      );
 
-          if (elementTop < window.innerHeight - elementVisible) {
-            element.classList.add("visible");
-          }
-        });
-      }
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
 
-      // Navbar scroll effect
-      function updateNavbar() {
-        const navbar = document.getElementById("navbar");
-        if (window.scrollY > 100) {
-          navbar.classList.add("navbar-scrolled");
-        } else {
-          navbar.classList.remove("navbar-scrolled");
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add("visible");
         }
+      });
+    }
+
+    // Navbar scroll effect
+    function updateNavbar() {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 100) {
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
       }
+    }
 
-      // Parallax effect for hero section
-      // function parallaxEffect() {
-      //   const hero = document.getElementById('hero');
-      //   const scrolled = window.pageYOffset;
-      //   const rate = scrolled * -0.5;
+    // Parallax effect for hero section
+    // function parallaxEffect() {
+    //   const hero = document.getElementById('hero');
+    //   const scrolled = window.pageYOffset;
+    //   const rate = scrolled * -0.5;
 
-      //   if (hero) {
-      //     hero.style.transform = `translateY(${rate}px)`;
-      //   }
-      // }
+    //   if (hero) {
+    //     hero.style.transform = `translateY(${rate}px)`;
+    //   }
+    // }
 
-      // Initialize all animations and effects
-      window.addEventListener("scroll", () => {
-        animateOnScroll();
-        updateNavbar();
-        parallaxEffect();
+    // Initialize all animations and effects
+    window.addEventListener("scroll", () => {
+      animateOnScroll();
+      updateNavbar();
+      parallaxEffect();
+    });
+
+    window.addEventListener("load", () => {
+      animateOnScroll();
+      updateNavbar();
+    });
+
+    // Product interactions
+    const productCards = document.querySelectorAll(".home-card");
+    productCards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        card.style.transform = "translateY(-10px) scale(1.02)";
       });
 
-      window.addEventListener("load", () => {
-        animateOnScroll();
-        updateNavbar();
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0) scale(1)";
       });
+    });
 
-      // Product interactions
-      const productCards = document.querySelectorAll(".home-card");
-      productCards.forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-          card.style.transform = "translateY(-10px) scale(1.02)";
-        });
+    // Enhanced button interactions
+    const buttons = document.querySelectorAll(".btn-animate");
+    buttons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        let ripple = document.createElement("span");
+        let rect = this.getBoundingClientRect();
+        let size = Math.max(rect.width, rect.height);
+        let x = e.clientX - rect.left - size / 2;
+        let y = e.clientY - rect.top - size / 2;
 
-        card.addEventListener("mouseleave", () => {
-          card.style.transform = "translateY(0) scale(1)";
-        });
+        ripple.style.width = ripple.style.height = size + "px";
+        ripple.style.left = x + "px";
+        ripple.style.top = y + "px";
+        ripple.classList.add("ripple");
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
       });
+    });
 
-      // Enhanced button interactions
-      const buttons = document.querySelectorAll(".btn-animate");
-      buttons.forEach((button) => {
-        button.addEventListener("click", function (e) {
-          let ripple = document.createElement("span");
-          let rect = this.getBoundingClientRect();
-          let size = Math.max(rect.width, rect.height);
-          let x = e.clientX - rect.left - size / 2;
-          let y = e.clientY - rect.top - size / 2;
+    // LocalStorage functionality
+    const product = JSON.parse(localStorage.getItem("product"));
+    if (product) {
+      const mainImg = document.getElementById("mainImg");
+      const titleProduct = document.getElementById("title-product");
+      const priceProduct = document.getElementById("price-product");
+      const descProduct = document.getElementById("desc-product");
 
-          ripple.style.width = ripple.style.height = size + "px";
-          ripple.style.left = x + "px";
-          ripple.style.top = y + "px";
-          ripple.classList.add("ripple");
+      if (mainImg) mainImg.src = product.src;
+      if (titleProduct) titleProduct.textContent = product.title;
+      if (priceProduct) priceProduct.textContent = product.price;
+      if (descProduct) descProduct.textContent = product.desc;
+    }
+  </script>
 
-          this.appendChild(ripple);
+  <script src="script.js"></script>
+</body>
 
-          setTimeout(() => {
-            ripple.remove();
-          }, 600);
-        });
-      });
-
-      // LocalStorage functionality
-      const product = JSON.parse(localStorage.getItem("product"));
-      if (product) {
-        const mainImg = document.getElementById("mainImg");
-        const titleProduct = document.getElementById("title-product");
-        const priceProduct = document.getElementById("price-product");
-        const descProduct = document.getElementById("desc-product");
-
-        if (mainImg) mainImg.src = product.src;
-        if (titleProduct) titleProduct.textContent = product.title;
-        if (priceProduct) priceProduct.textContent = product.price;
-        if (descProduct) descProduct.textContent = product.desc;
-      }
-    </script>
-
-    <script src="script.js"></script>
-  </body>
 </html>
