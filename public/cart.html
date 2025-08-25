@@ -114,76 +114,7 @@
               <p>PRICE</p>
             </div>
               <div class="border-t border-gray-300 my-2"></div>
-            <div id="cart1" class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
-                <div class="images md:col-span-1 justify-center items-center flex">
-                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
-                </div>
-                <div class="product-des md:col-span-3 ps-6 pt-6">
-                  <h1 class="font-bold">BTA JERSEY</h1>
-                  <p class="text-sm font-semibold">T-SHORT</p>
-                  <p class="inline-block">Size: XS,</p>
-                  <p class="inline-block">Color: Black,</p>
-                  <p class="inline-block">Qty: 1</p>
-                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
-                  <div class="flex flex-wrap gap-2">
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
-                    <button id="removeCart" class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
-                  </div>
-                </div>
-                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
-                  $100.23
-                </div>
-            </div>
-              <div class="border-t border-gray-300 my-2"></div>
-            <!-- second cart  -->
-             <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
-                <div class="images md:col-span-1 justify-center items-center flex">
-                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
-                </div>
-                <div class="product-des md:col-span-3 ps-6 pt-6">
-                  <h1 class="font-bold">BTA JERSEY</h1>
-                  <p class="text-sm font-semibold">T-SHORT</p>
-                  <p class="inline-block">Size: XS,</p>
-                  <p class="inline-block">Color: Black,</p>
-                  <p class="inline-block">Qty: 1</p>
-                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
-                  <div class="flex flex-wrap gap-2">
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
-                  </div>
-                </div>
-                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
-                  $100.23
-                </div>
-            </div>
-            <!-- third cart -->
-               <div class="border-t border-gray-300 my-2"></div>
-             <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
-                <div class="images md:col-span-1 justify-center items-center flex">
-                  <img src="assets/img/11.webp" alt="" class="w-full h-auto">
-                </div>
-                <div class="product-des md:col-span-3 ps-6 pt-6">
-                  <h1 class="font-bold">BTA JERSEY</h1>
-                  <p class="text-sm font-semibold">T-SHORT</p>
-                  <p class="inline-block">Size: XS,</p>
-                  <p class="inline-block">Color: Black,</p>
-                  <p class="inline-block">Qty: 1</p>
-                  <p class="text-xs font-bold text-gray-500 py-4">Style No. NDBRG-WD1452</p>
-                  <div class="flex flex-wrap gap-2">
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">save for later</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Move to wishlist</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Remove</span></button>
-                    <button class="me-2 mb-2"><span class="text-sm text-gray-500 underline font-bold font-serif">Edit</span></button>
-                  </div>
-                </div>
-                <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
-                  $100.23
-                </div>
-            </div>
+            <div id="cart-items"></div>
         </main>
         <aside class="lg:col-span-2  order-first lg:order-last">
           <div class="text-center font-bold">
@@ -304,27 +235,13 @@
       }
     }
 
-    // Parallax effect for hero section
-    // function parallaxEffect() {
-    //   const hero = document.getElementById('hero');
-    //   const scrolled = window.pageYOffset;
-    //   const rate = scrolled * -0.5;
-
-    //   if (hero) {
-    //     hero.style.transform = `translateY(${rate}px)`;
-    //   }
-    // }
-
     // Initialize all animations and effects
     window.addEventListener("scroll", () => {
       animateOnScroll();
-      updateNavbar();
-      parallaxEffect();
     });
 
     window.addEventListener("load", () => {
       animateOnScroll();
-      updateNavbar();
     });
 
     // Product interactions
@@ -375,9 +292,11 @@
       if (priceProduct) priceProduct.textContent = product.price;
       if (descProduct) descProduct.textContent = product.desc;
     }
+ 
   </script>
 
-  <script src="script.js"></script>
+<script>displayCart()</script>
+  <script defer src="script.js"></script>
 </body>
 
 </html>

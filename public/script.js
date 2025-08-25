@@ -84,11 +84,75 @@ for (let i = 0; i < homeImg.length; i++) {
 };
 
     };
+// FOR ADDING CART FUNCTION
+function addToCart(title, price, image) {
+  let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+  // keep property names consistent (use "image" everywhere)
+  cart.push({ title: title, price: price, image: image });
+
+  sessionStorage.setItem("cart", JSON.stringify(cart));
+
+  updateCartCount();
+}
+
+function displayCart() {
+  let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+  let cartItemsDiv = document.getElementById("cart-items");
+
+  if (!cartItemsDiv) return; // skip if not on cart.html
+
+  if (cart.length === 0) {
+    cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
+
+  let html = "";
+  cart.slice().reverse().forEach((item, index) => {
+    html += `
+      <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
+        <div class="images md:col-span-1 justify-center items-center flex">
+          <img src="${item.image}" alt="${item.title}" class="w-full h-auto">
+        </div>
+        <div class="product-des md:col-span-3 ps-6 pt-6">
+          <h1 class="font-bold">${item.title}</h1>
+          <p class="text-sm font-semibold">Qty: 1</p>
+          <button onclick="removeFromCart(${index})" class="text-sm text-gray-500 underline">Remove</button>
+        </div>
+        <div class="price md:col-span-1 flex justify-center md:justify-end items-start pt-6">
+           ${item.price}
+        </div>
+      </div>
+      <div class="border-t border-gray-300 my-2"></div>
+    `;
+  });
+
+  cartItemsDiv.innerHTML = html;
+}
+
+function removeFromCart(index) {
+  let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  sessionStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+  updateCartCount();
+}
 
 
-const removeCart = document.getElementById("removeCart");
-const removeElement = document.getElementById("cart");
-removeCart.addEventListener('click', () => {
-    // Remove the element when the button is clicked
-    removeElement.remove();
-});
+
+// Run automatically when on cart.html
+if (document.getElementById("cart-items")) {
+    displayCart();
+    updateCartCount();
+}
+
+
+
+
+// FOR REMOVING CART FUNCTION
+// const removeCart = document.getElementById("removeCart");
+// const removeElement = document.getElementById("cart");
+// removeCart.addEventListener('click', () => {
+//     // Remove the element when the button is clicked
+//     removeElement.remove();
+// });

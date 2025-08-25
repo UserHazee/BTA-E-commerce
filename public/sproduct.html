@@ -1,368 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BTA Ecommerce</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-dM0j3Px7DJ...your_hash..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body class="text-[#222]">
-    <!-- NAVBAR -->
-    <div class="sticky top-0 z-10">
-      <header
-        class="flex py-3 items-between justify-between bg-[#222] shadow-md absolute"
-      >
-        <div class="ps-10">
-          <a href="#">
-            <img
-              src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png"
-              alt="Logo"
-              class="h-[60px] w-[60px] object-contain"
-            />
-          </a>
-        </div>
-        <div
-          class="flex flex-row gap-1 justify-center items-center font-helvetica"
-        >
-          <nav class="">
-            <ul
-              id="nav"
-              class="flex gap-6 list-none items-center justify-center"
-            >
-              <li><a href="index.html" class="font-bold">Home</a></li>
-              <li><a href="shop.html" class="active font-bold">Shop</a></li>
-              <li><a href="Blog.html" class="font-bold">Blog</a></li>
-              <li><a href="#" class="font-bold">About</a></li>
-              <li><a href="#" class="font-bold">Contact</a></li>
-              <li class="closing-icon block tab:hidden"><a href="#" id="close"><i class="fas fa-window-close"></i></a></li>
-            </ul>
-          </nav>
-          <div
-            class="mobile justify-center items-center gap-6 tab:pe-10 pe-0 flex"
-          >
-            <li>
-              <a href="cart.html"><i class="fa-solid fa-cart-shopping text-3xl"></i></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTA Ecommerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-dM0j3Px7DJ...your_hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="text-[#222]">
+  <!-- NAVBAR -->
+  <div class="sticky top-0 z-10">
+    <header class="flex py-3 items-between justify-between bg-[#222] shadow-md absolute">
+      <div class="ps-10">
+        <a href="#">
+          <img src="/assets/img/ChatGPT Image Aug 1, 2025, 02_53_09 PM.png" alt="Logo"
+            class="h-[60px] w-[60px] object-contain" />
+        </a>
+      </div>
+      <div class="flex flex-row gap-1 justify-center items-center font-helvetica">
+        <nav class="">
+          <ul id="nav" class="flex gap-6 list-none items-center justify-center">
+            <li><a href="index.html" class="font-bold">Home</a></li>
+            <li><a href="shop.html" class="active font-bold">Shop</a></li>
+            <li><a href="Blog.html" class="font-bold">Blog</a></li>
+            <li><a href="#" class="font-bold">About</a></li>
+            <li><a href="#" class="font-bold">Contact</a></li>
+            <li class="closing-icon block tab:hidden"><a href="#" id="close"><i class="fas fa-window-close"></i></a>
             </li>
+          </ul>
+        </nav>
+        <div class="mobile justify-center items-center gap-6 tab:pe-10 pe-0 flex">
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping text-3xl"></i></a>
+          </li>
 
-            <li class="tab:hidden pe-10 block">
-              <div id="bar" class="bar">
-                <i id="bar" class="ic fa-solid fa-bars text-3xl"></i>
-              </div>
-            </li>
-          </div>
+          <li class="tab:hidden pe-10 block">
+            <div id="bar" class="bar">
+              <i id="bar" class="ic fa-solid fa-bars text-3xl"></i>
+            </div>
+          </li>
         </div>
-      </header>
-    </div>
-    <!-- MAIN  -->
-    <main class="">
-      <!-- HERO SECTION -->
+      </div>
+    </header>
+  </div>
+  <!-- MAIN  -->
+  <main class="">
+    <!-- HERO SECTION -->
 
-      <section
-        id="details-product"
-        class="flex tab:gap-10 gap-0 pt-30 justify-between font-helvetica"
-      >
-        <div class="single-pro-image w-[40%] ms-[50px]">
-          <img
-            src="/assets/img/7.webp"
-            class="border border-gray-600"
-            id="mainImg"
-            alt=""
-            width="100%"
-          />
-          <div
-            class="small-img-group flex justify-between mt-1"
-            id="small-img-col"
-          >
-            <div class="small-img-col">
-              <img
-                src="/assets/img/7.webp"
-                class="small-img border border-gray-600"
-                id="smallImg"
-                width="100%"
-                alt="HAVING POOR DEFENSE IS A CRIME"
-                data-price="₱ 750.00"
-                data-description="Lightweight and comfortable."
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="/assets/img/10.webp"
-                class="small-img border border-gray-600"
-                id="smallImg"
-                width="100%"
-                alt="BTA JERSEY"
-                data-price="₱ 700.00"
-                data-description="Lightweight and comfortable."
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="/assets/img/GD_WHITE.webp"
-                class="small-img border border-gray-600"
-                id="smallImg"
-                width="100%"
-                alt="GOD DID"
-                data-price="₱ 850.00"
-                data-description="Lightweight and comfortable."
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="/assets/img/www.thebtastore.com.zip-11.webp"
-                class="small-img border border-gray-600"
-                id="smallImg"
-                width="100%"
-                alt="GOD DID | BLACK"
-                data-price="₱ 850.00"
-                data-description="Lightweight and comfortable."
-              />
-            </div>
+    <section id="details-product" class="flex tab:gap-10 gap-0 pt-30 justify-between font-helvetica">
+      <div class="single-pro-image w-[40%] ms-[50px]">
+        <img src="/assets/img/7.webp" class="border border-gray-600" id="mainImg" alt="" width="100%" />
+        <div class="small-img-group flex justify-between mt-1" id="small-img-col">
+          <div class="small-img-col">
+            <img src="/assets/img/7.webp" class="small-img border border-gray-600" id="smallImg" width="100%"
+              alt="HAVING POOR DEFENSE IS A CRIME" data-price="₱ 750.00"
+              data-description="Lightweight and comfortable." />
           </div>
-        </div>
-        <div class="pro-des min-w-[50%] pt-[30px]">
-          <h6 class="text-md font-medium pt-[40px] pb-[20px]">
-            Home / T-Shirt
-          </h6>
-          <h4 class="text-[40px] font-medium pt-3" id="title-product">
-            Men's Fashion T Shirt
-          </h4>
-          <h2 class="text-3xl font-bold pt-3" id="price-product">$139.00</h2>
-          <select
-            name=""
-            id="inputopt"
-            value="1"
-            class="text-lg block py-[10px] px-[10px] mb-[10px]"
-          >
-            <option value="">XL</option>
-            <option value="">XXL</option>
-            <option value="">Small</option>
-            <option value="">Large</option>
-          </select>
-          <div
-            class="inline-block ps-[10px] h-[47px] justify-center items-center text-[20px] ms-[10px]"
-          >
-            <input
-              type="number"
-              value="1"
-              min="0"
-              class="inputquan border ps-[10px] rounded pt-[2px] w-[50px]"
-            />
+          <div class="small-img-col">
+            <img src="/assets/img/10.webp" class="small-img border border-gray-600" id="smallImg" width="100%"
+              alt="BTA JERSEY" data-price="₱ 700.00" data-description="Lightweight and comfortable." />
           </div>
-          <button
-            class="border border-[#222] px-5 py-3 bg-[#2b2c2d] text-white ms-5"
-          >
-            Add to Cart
-          </button>
-          <h4 class="text-2xl font-bold pt-[40px] pb-[20px]">
-            Product Details
-          </h4>
-          <div class="max-w-[650px]">
-            <p id="desc-product" class="text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
-              tenetur.
-            </p>
+          <div class="small-img-col">
+            <img src="/assets/img/GD_WHITE.webp" class="small-img border border-gray-600" id="smallImg" width="100%"
+              alt="GOD DID" data-price="₱ 850.00" data-description="Lightweight and comfortable." />
           </div>
-        </div>
-      </section>
-      <section id="latest-product" class="mt-25 mb-25">
-        <div class="">
-          <h1
-            class="text-4xl font-spartan font-bold tracking-widest ps-24 pb-8"
-          >
-            Latest
-          </h1>
-          <!-- card -->
-          <div class="parent-pro w-[100%] m-auto">
-            <div class="pro-container" id="fristCard-featured">
-              <div
-                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
-              >
-                <img
-                  src="/assets/img/pretty_girls.webp"
-                  class="w-[100%] rounded-2xl"
-                  id="firstImg"
-                  alt="PRETTY GIRLS"
-                  data-price="₱750.00"
-                  data-description="Lightweight and comfortable."
-                />
-                <div class="des">
-                  <span> T-Shirt </span>
-                  <h5>PRETTY GIRLS</h5>
-                  <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4>₱750.00 PHP</h4>
-                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                </div>
-              </div>
-              <div
-                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
-              >
-                <img
-                  src="/assets/img/Path_to_greatness.webp"
-                  class="w-[100%] rounded-2xl"
-                  alt="PATH TO GREATNESS"
-                  data-price="₱750.00"
-                  data-description="Lightweight and comfortable."
-                />
-                <div class="des">
-                  <span> T-Shirt </span>
-                  <h5>PATH TO GREATNESS</h5>
-                  <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4>₱750.00 PHP</h4>
-                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                </div>
-              </div>
-              <div
-                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
-              >
-                <img
-                  src="/assets/img/JOBS_NOT_FINISH.webp"
-                  class="w-[100%] rounded-2xl"
-                  alt="JOBS NOT FINISH"
-                  data-price="₱750.00"
-                  data-description="Lightweight and comfortable."
-                />
-                <div class="des">
-                  <span> T-Shirt </span>
-                  <h5>JOB'S NOT FINISHED | REGULAR FIT</h5>
-                  <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4>₱850.00 PHP</h4>
-                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                </div>
-              </div>
-              <div
-                class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200"
-              >
-                <img
-                  src="/assets/img/ZIPMOUTH.webp"
-                  class="w-[100%] rounded-2xl"
-                  alt="ZIPMOUTH"
-                  data-price="₱750.00"
-                  data-description="Lightweight and comfortable."
-                />
-                <div class="des">
-                  <span> T-Shirt </span>
-                  <h5>ZIPMOUTH</h5>
-                  <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4>₱750.00 PHP</h4>
-                  <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- before Footer Section -->
-      <section id="sign-up-banner" class="mt-6 mb-12">
-        <div
-          class="bg-[#2222] h-[200px] place-content-center items-center flex"
-        >
-          <img
-            src="/assets/img/BTA_black.png"
-            alt=""
-            class="h-[100px] w-[100px] object-contain"
-          />
-        </div>
-      </section>
-    </main>
-    <footer class="pb-18 pt-6 w-[90%] m-auto">
-      <!-- Footer content -->
-
-      <div class="roll-tide flex flex-col tab:flex-row">
-        <div class="col basis-[40%]">
-          <h4 class="font-bold pb-4 tab:pt-0 pt-4">Contact</h4>
-          <p class="overflow-hidden">
-            <strong>Address: </strong>524 San Jose Del Monte, Bulacan
-          </p>
-          <p class="overflow-hidden">
-            <strong>Phone: </strong>+63 998 1251 748 / +63 970 7579 959
-          </p>
-          <p class="overflow-hidden">
-            <strong>OpenHours: </strong>8:00 AM - 18:00, Mon - Sat
-          </p>
-
-          <div class="socials">
-            <h3 class="font-bold py-4">Follow Us</h3>
-            <div class="icon flex gap-2 my-5">
-              <i class="fab fa-facebook-f fa-xl"></i>
-              <i class="fab fa-instagram fa-xl"></i>
-              <i class="fab fa-youtube fa-xl"></i>
-            </div>
-          </div>
-        </div>
-        <div class="footer-2block flex basis-[40%]">
-          <div class="col basis-[50%] tab:basis-[50%]">
-            <h1 class="pb-4 mt-4 tab:mt-0"><strong>About</strong></h1>
-            <a href="#about">About Us</a><br />
-            <a href="#about">Delivery information</a><br />
-            <a href="#about">Privacy Policy</a><br />
-            <a href="#about">Terms & Condititions</a><br />
-            <a href="#about">Contact Us</a>
-          </div>
-          <div class="col basis-[50%]">
-            <h1 class="pb-4 mt-4 tab:mt-0"><strong>My Account</strong></h1>
-            <a href="#about">Sign In</a><br />
-            <a href="#about">View Cart</a><br />
-            <a href="#about">My Wishlist</a><br />
-            <a href="#about">Track My Order</a><br />
-            <a href="#about">Help</a><br />
-          </div>
-        </div>
-
-        <div class="col install basis-[20%]">
-          <h4 class="pb-4 mt-4 tab:mt-0"><strong>Payment Method</strong></h4>
-          <p>Secured Payment Gateways</p>
-          <div class="row py-4">
-            <img
-              src="/assets/img/Group 50.png"
-              alt=""
-              class="w-full h-full object-fit"
-            />
+          <div class="small-img-col">
+            <img src="/assets/img/www.thebtastore.com.zip-11.webp" class="small-img border border-gray-600"
+              id="smallImg" width="100%" alt="GOD DID | BLACK" data-price="₱ 850.00"
+              data-description="Lightweight and comfortable." />
           </div>
         </div>
       </div>
-    </footer>
-    <script defer src="script.js"></script>
-    <script defer>
-      const product = JSON.parse(localStorage.getItem("product"));
-      if (product) {
-        document.getElementById("mainImg").src = product.src;
-        document.getElementById("title-product").textContent = product.title;
-        document.getElementById("price-product").textContent = product.price;
-        document.getElementById("desc-product").textContent = product.desc;
+      <div class="pro-des min-w-[50%] pt-[30px]">
+        <h6 class="text-md font-medium pt-[40px] pb-[20px]">
+          Home / T-Shirt
+        </h6>
+        <h4 class="text-[40px] font-medium pt-3" id="title-product">
+          Men's Fashion T Shirt
+        </h4>
+        <h2 class="text-3xl font-bold pt-3" id="price-product">$139.00</h2>
+        <select name="" id="inputopt" value="1" class="text-lg block py-[10px] px-[10px] mb-[10px]">
+          <option value="">XL</option>
+          <option value="">XXL</option>
+          <option value="">Small</option>
+          <option value="">Large</option>
+        </select>
+        <div class="inline-block ps-[10px] h-[47px] justify-center items-center text-[20px] ms-[10px]">
+          <input type="number" value="1" min="0" class="inputquan border ps-[10px] rounded pt-[2px] w-[50px]" />
+        </div>
+        <button onclick="addToCartFromElement('smallImg')"
+          class="border border-[#222] px-5 py-3 bg-[#2b2c2d] text-white ms-5">
+          Add to Cart
+        </button>
+        <h4 class="text-2xl font-bold pt-[40px] pb-[20px]">
+          Product Details
+        </h4>
+        <div class="max-w-[650px]">
+          <p id="desc-product" class="text-lg">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+            tenetur.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="latest-product" class="mt-25 mb-25">
+      <div class="">
+        <h1 class="text-4xl font-spartan font-bold tracking-widest ps-24 pb-8">
+          Latest
+        </h1>
+        <!-- card -->
+        <div class="parent-pro w-[100%] m-auto">
+          <div class="pro-container" id="fristCard-featured">
+            <div
+              class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200">
+              <img src="/assets/img/pretty_girls.webp" class="w-[100%] rounded-2xl" id="firstImg" alt="PRETTY GIRLS"
+                data-price="₱750.00" data-description="Lightweight and comfortable." />
+              <div class="des">
+                <span> T-Shirt </span>
+                <h5>PRETTY GIRLS</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4>₱750.00 PHP</h4>
+                <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+              </div>
+            </div>
+            <div
+              class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200">
+              <img src="/assets/img/Path_to_greatness.webp" class="w-[100%] rounded-2xl" alt="PATH TO GREATNESS"
+                data-price="₱750.00" data-description="Lightweight and comfortable." />
+              <div class="des">
+                <span> T-Shirt </span>
+                <h5>PATH TO GREATNESS</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4>₱750.00 PHP</h4>
+                <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+              </div>
+            </div>
+            <div
+              class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200">
+              <img src="/assets/img/JOBS_NOT_FINISH.webp" class="w-[100%] rounded-2xl" alt="JOBS NOT FINISH"
+                data-price="₱750.00" data-description="Lightweight and comfortable." />
+              <div class="des">
+                <span> T-Shirt </span>
+                <h5>JOB'S NOT FINISHED | REGULAR FIT</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4>₱850.00 PHP</h4>
+                <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+              </div>
+            </div>
+            <div
+              class="card w-[30%] px-4 py-3 min-w-[300px] border-[#cce7d0] border-3 rounded-[25px] cursor-pointer hover:shadow-[20px_20px_30px_rgba(0,0,0,0.02)] transition ease-in-out duration-200">
+              <img src="/assets/img/ZIPMOUTH.webp" class="w-[100%] rounded-2xl" alt="ZIPMOUTH" data-price="₱750.00"
+                data-description="Lightweight and comfortable." />
+              <div class="des">
+                <span> T-Shirt </span>
+                <h5>ZIPMOUTH</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4>₱750.00 PHP</h4>
+                <div class="cart"><i class="fa-solid fa-cart-plus"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- before Footer Section -->
+    <section id="sign-up-banner" class="mt-6 mb-12">
+      <div class="bg-[#2222] h-[200px] place-content-center items-center flex">
+        <img src="/assets/img/BTA_black.png" alt="" class="h-[100px] w-[100px] object-contain" />
+      </div>
+    </section>
+  </main>
+  <footer class="pb-18 pt-6 w-[90%] m-auto">
+    <!-- Footer content -->
+
+    <div class="roll-tide flex flex-col tab:flex-row">
+      <div class="col basis-[40%]">
+        <h4 class="font-bold pb-4 tab:pt-0 pt-4">Contact</h4>
+        <p class="overflow-hidden">
+          <strong>Address: </strong>524 San Jose Del Monte, Bulacan
+        </p>
+        <p class="overflow-hidden">
+          <strong>Phone: </strong>+63 998 1251 748 / +63 970 7579 959
+        </p>
+        <p class="overflow-hidden">
+          <strong>OpenHours: </strong>8:00 AM - 18:00, Mon - Sat
+        </p>
+
+        <div class="socials">
+          <h3 class="font-bold py-4">Follow Us</h3>
+          <div class="icon flex gap-2 my-5">
+            <i class="fab fa-facebook-f fa-xl"></i>
+            <i class="fab fa-instagram fa-xl"></i>
+            <i class="fab fa-youtube fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2block flex basis-[40%]">
+        <div class="col basis-[50%] tab:basis-[50%]">
+          <h1 class="pb-4 mt-4 tab:mt-0"><strong>About</strong></h1>
+          <a href="#about">About Us</a><br />
+          <a href="#about">Delivery information</a><br />
+          <a href="#about">Privacy Policy</a><br />
+          <a href="#about">Terms & Condititions</a><br />
+          <a href="#about">Contact Us</a>
+        </div>
+        <div class="col basis-[50%]">
+          <h1 class="pb-4 mt-4 tab:mt-0"><strong>My Account</strong></h1>
+          <a href="#about">Sign In</a><br />
+          <a href="#about">View Cart</a><br />
+          <a href="#about">My Wishlist</a><br />
+          <a href="#about">Track My Order</a><br />
+          <a href="#about">Help</a><br />
+        </div>
+      </div>
+
+      <div class="col install basis-[20%]">
+        <h4 class="pb-4 mt-4 tab:mt-0"><strong>Payment Method</strong></h4>
+        <p>Secured Payment Gateways</p>
+        <div class="row py-4">
+          <img src="/assets/img/Group 50.png" alt="" class="w-full h-full object-fit" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer src="script.js"></script>
+  <script defer>
+    const product = JSON.parse(localStorage.getItem("product"));
+    if (product) {
+      document.getElementById("mainImg").src = product.src;
+      document.getElementById("title-product").textContent = product.title;
+      document.getElementById("price-product").textContent = product.price;
+      document.getElementById("desc-product").textContent = product.desc;
+    }
+    function addToCartFromElement() {
+      let image = document.getElementById("mainImg").getAttribute("src");
+      let title = document.getElementById("title-product").innerText;
+      let price = document.getElementById("price-product").innerText;
+      let desc = document.getElementById("desc-product").innerText;
+
+      let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+      cart.push({ img: image, title, price, desc });
+      sessionStorage.setItem("cart", JSON.stringify(cart));
+
+      updateCartCount();
+      alert(`${title} added to cart!`);
+    }
+
+    // 👉 Update the cart count in navbar
+    function updateCartCount() {
+      let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+      let cartCountEl = document.getElementById("cart-count");
+      if (cartCountEl) {
+        cartCountEl.innerText = cart.length;
       }
-    </script>
-  </body>
+    }
+
+    // 👉 Run when page loads so the count stays updated
+    document.addEventListener("DOMContentLoaded", updateCartCount);
+  </script>
+</body>
+
 </html>
