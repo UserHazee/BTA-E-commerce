@@ -261,17 +261,17 @@
       document.getElementById("desc-product").textContent = product.desc;
     }
     function addToCartFromElement() {
-      let image = document.getElementById("mainImg").getAttribute("src");
+      let img = document.getElementById("mainImg").getAttribute("src");
       let title = document.getElementById("title-product").innerText;
       let price = document.getElementById("price-product").innerText;
-      let desc = document.getElementById("desc-product").innerText;
 
       let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
-      cart.push({ img: image, title, price, desc });
+      cart.push({ img: img, title, price });
       sessionStorage.setItem("cart", JSON.stringify(cart));
 
       updateCartCount();
-      alert(`${title} added to cart!`);
+      alert(`${title} added to cart! ${img}`);
+      
     }
 
     // 👉 Update the cart count in navbar

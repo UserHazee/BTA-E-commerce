@@ -52,48 +52,55 @@ for (let i = 0; i < changeImg.length; i++) {
 const shopImg = document.getElementsByClassName("shop-card");
 for (let i = 0; i < shopImg.length; i++) {
     shopImg[i].onclick = function () {
-    const img = this.querySelector("img");
-    if (img) {
-        localStorage.setItem("product", JSON.stringify({
-            src: img.src,
-            title: img.alt,
-            price: img.dataset.price,
-            desc: img.dataset.description
-        }));
+        const img = this.querySelector("img");
+        if (img) {
+            // Get relative path instead of full URL
+            const relativeSrc = img.getAttribute("src");
 
-        window.location.href = "sproduct.html";
-    }
-};
+            localStorage.setItem("product", JSON.stringify({
+                src: relativeSrc, // <-- relative path (no http://127.0.0.1)
+                title: img.alt,
+                price: img.dataset.price,
+                desc: img.dataset.description
+            }));
 
+            window.location.href = "sproduct.html";
+        }
     };
+}
 
 const homeImg = document.getElementsByClassName("home-card");
 for (let i = 0; i < homeImg.length; i++) {
     homeImg[i].onclick = function () {
-    const img = this.querySelector("img");
-    if (img) {
-        localStorage.setItem("product", JSON.stringify({
-            src: img.src,
-            title: img.alt,
-            price: img.dataset.price,
-            desc: img.dataset.description
-        }));
+        const img = this.querySelector("img");
+        if (img) {
+            const relativeSrc = img.getAttribute("src");
 
-        window.location.href = "sproduct.html";
-    }
-};
+            localStorage.setItem("product", JSON.stringify({
+                src: relativeSrc,
+                title: img.alt,
+                price: img.dataset.price,
+                desc: img.dataset.description
+            }));
 
+            window.location.href = "sproduct.html";
+        }
     };
+}
+
+
 // FOR ADDING CART FUNCTION
-function addToCart(title, price, image) {
+function addToCart(title, price, img) {
   let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
   // keep property names consistent (use "image" everywhere)
-  cart.push({ title: title, price: price, image: image });
+  cart.push({ title: title, price: price, img: img });
+  
 
   sessionStorage.setItem("cart", JSON.stringify(cart));
 
   updateCartCount();
+  
 }
 
 function displayCart() {
@@ -112,7 +119,7 @@ function displayCart() {
     html += `
       <div class="cart grid grid-cols-1 md:grid-cols-5 gap-4 justify-center">
         <div class="images md:col-span-1 justify-center items-center flex">
-          <img src="${item.image}" alt="${item.title}" class="w-full h-auto">
+          <img src="${item.img}" alt="${item.title}" class="w-full h-auto">
         </div>
         <div class="product-des md:col-span-3 ps-6 pt-6">
           <h1 class="font-bold">${item.title}</h1>
